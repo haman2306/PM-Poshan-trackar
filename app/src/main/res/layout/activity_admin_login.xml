@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin">
+
+    <EditText
+        android:id="@+id/etEmailIdA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="15dp"
+        android:hint="Enter your admin id"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etPaswwordA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/etEmailIdA"
+        android:layout_marginTop="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmitA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPaswwordA"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:background="@color/orange1"/>
+    <TextView
+        android:id="@+id/txtForgotPasswordA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPaswwordA"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:text="Forgot Password?"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+</RelativeLayout>
